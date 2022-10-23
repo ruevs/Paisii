@@ -1,0 +1,577 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Paisii Hilendarski,Паисий Хилендарски,народни будители,7-мо СУ,презентация,2-ри клас,slideshow,presentation" />
+    <meta name="description" content="Презентация за Паисий Хилендарски" />
+    <title>Презентация за Паисий Хилендарски</title>
+<!--      @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);-->
+    <style>
+      @import url(./engine/fonts/fonts.css);
+      body {
+        font-family: 'Open Sans';
+      }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+      .remark-slide-content h1 { font-size: 3em; }
+      .remark-slide-content h2 { font-size: 2em; }
+      .remark-slide-content h3 { font-size: 1.6em; }
+      .footnote {
+        bottom: 5em;
+        position: absolute;
+      }
+      .footnote p {
+        background-color: rgba(0,0,0,0.5);
+        padding: 4px;
+      }
+      .slidofootnote {
+        position: absolute;
+        left: 0.4em;
+        bottom: 0.1em;
+      }
+      li p { line-height: 1.25em; }
+      .red { color: #fa0000; }
+      .white { color: #ffffff; }
+      .black { color: #000000; }
+      .yellow { color: #ffff00;}
+      .blue{ color: #0000ff; }
+      .mixblend{
+        mix-blend-mode: difference;
+        isolation: isolate;
+      }
+      .blackshadow{
+        text-shadow: #000 3px 3px 2px;
+      }
+      .whiteshadow{
+        text-shadow: #fff 3px 3px 2px;
+      }
+      .yellowshadow{
+        text-shadow: #ff0 3px 3px 2px;
+      }
+      .atfoverlay {
+        position: absolute;
+        width: 90%; /* Full width (cover the whole page) */
+        height: 63%; /* Full height (cover the whole page) */
+        bottom: 0;
+        left: 8%;
+      }
+      .asterixoverlay {
+        position: absolute;
+        width: 20%; /* Full width (cover the whole page) */
+        height: 63%; /* Full height (cover the whole page) */
+        top: 0;
+        left: 30.8%;
+        z-index: 0;
+      }
+
+      .large { font-size: 2em; }
+      a, a > code {
+        color: rgb(249, 38, 114);
+        text-decoration: none;
+      }
+      code {
+/*        background: #f7f8f2;*/
+        border-radius: 5px;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-code-line-highlighted     { background-color: #373832; }
+      .pull-left {
+        float: left;
+        width: 47%;
+      }
+      .pull-right {
+        float: right;
+        width: 47%;
+      }
+      .pull-right ~ p {
+        clear: both;
+      }
+      #slideshow .slide .content code {
+        font-size: 0.8em;
+      }
+      #slideshow .slide .content pre code {
+        font-size: 0.9em;
+        padding: 15px;
+      }
+      .inverse {
+        background-color: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+
+      /* Slide-specific styling */
+      #slide-inverse .footnote {
+        bottom: 12px;
+        left: 20px;
+      }
+      #slide-how .slides {
+        font-size: 0.9em;
+        position: absolute;
+        top:  151px;
+        right: 140px;
+      }
+      #slide-how .slides h3 {
+        margin-top: 0.2em;
+      }
+      #slide-how .slides .first, #slide-how .slides .second {
+        padding: 1px 20px;
+        height: 90px;
+        width: 120px;
+        -moz-box-shadow: 0 0 10px #777;
+        -webkit-box-shadow: 0 0 10px #777;
+        box-shadow: 0 0 10px #777;
+      }
+      #slide-how .slides .first {
+        background: #fff;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        z-index: 1;
+      }
+      #slide-how .slides .second {
+        position: relative;
+        background: #fff;
+        z-index: 0;
+      }
+
+      /* Two-column layout */
+        .left-column {
+          display: none;
+        }
+/*      .left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+      }*/
+      .right-float {
+        float: right;
+      }
+      .pisa_bg {
+        background: url("./media/Tower_of_Pisa.jpg");
+        background-size: contain
+      }
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+background-image: url(./media/PaisiiPicture.png)
+background-size: cover
+
+.large[
+#Паисий Хилендарски]
+##Народни будители
+
+.footnote.left[Калоян Руевски]
+???
+.footnote[В Интернет http://ruevs.com/energy/]
+
+---
+
+layout: false
+background-image: url(./media/PaisiiPicture.png)
+background-size: cover
+
+.white.large[
+###Паисий Хилендарски,
+]
+
+--
+
+.white.large[
+често наричан още Отец Паисий, e български народен будител, духовник и светия, автор на „История славянобългарска“. Канонизиран е за светец с писмен акт на Светия синод на Българската православна църква през 1962 година и паметта му се отбелязва на 19 юни.
+]
+
+???
+## Защо за Паисий? Госпожа Дикова каза да е за народен будител :-)
+
+--
+
+.white.large[
+Изразените в труда му идеи за национално възраждане и освобождение на българския народ карат много учени да го сочат за основоположник на Българското възраждане.
+]
+
+---
+
+background-image: url(./media/PaisiiPicture.png)
+background-size: cover
+
+.white[
+##Произход и образование
+
+.large[
+Информация за живота на Паисий имаме от автобиографичните му бележки в „История славянобългарска“, вписванията в хилендарските кондики и някои писма. Роден е през 1722 година (казва се, че завършва „История славянобългарска“ 40-годишен) в Самоковската епархия със светско име Пенко или Петър. За родното си място самият той пише в „История славянобългарска“: „и пришедъша ва Светьiе гори Афонские у епархiи Самоковскiие въ лъто 1745“ („дошъл в Света гора Атонска от Самоковска епархия в 1745 година“).
+]]
+
+---
+
+background-image: url(./media/PaisiiPicture.png)
+background-size: cover
+
+.white.large[
+Има сведения и предания, които насочват и поставят родното място на Паисий в едно или друго населено място - Доспей, Ральово, Белово, Кралев дол, Банско. Диалектологични проучвания пределят селата в района на Самоковска Палакария за най-вероятно място на произход на Паисий.[2] Въпреки това, версията, че Паисий е от Банско преобладава. В своя статия от април 1912 година, в навечерието на Балканската война, бившият митрополит Теодосий Скопски пръв говори за вероятен произход на Паисий от Банско, по това време все още намиращ се под османска власт.[3]]
+
+---
+
+background-image: url(./media/PaisiiPicture.png)
+background-size: cover
+
+.white.large[
+Хипотезата му придобива широка популярност и утвърждава възгледа сред българската общественост за Македония като „люлка на Българското възраждане“.[3] Като водещо се има мнението на Йордан Иванов, че Паисий бил роден в Банско, тъй като вече е известно, че вторият му баща му Михаил Хадживълчов бил заможен търговец от Банско, а по-малкият му полу брат Вълчо Хадживълчов продължил бащината дейност и станал също известен ктитор и покровител на църквите в региона и особено на Хилендар и Зограф.[4] 
+.right[![Right-aligned image](./media/Paisii_Hilendarski.jpg)]
+]
+
+---
+
+background-image: url(./media/PaisiiPicture.png)
+background-size: cover
+
+.white.large[
+Паисий Хилендарски не получава системно образование, но през 1745 г. се замонашва в Хилендарския манастир, където брат му Лаврентий е игумен и където по-късно самият Паисий става йеромонах и проигумен.[5] По това време Хилендар имал статута на сръбски манастир, но поради местоположението му по-голямата част от монасите в него били българи от Македония. През 1758 г. пътува до Сремски Карловци като таксидиот, където се запознава с исторически съчинения и средновековни източници за българската история, които му послужват за написването на основния труд.
+]
+
+---
+
+background-image: url(./media/PaisiiPicture.png)
+background-size: cover
+
+.white.large[
+„История славянобългарска“ е завършена през 1762 г. в Зографския манастир, след като Паисий напуска Хилендарския манастир заради раздор с останалите монаси.[5] При обиколките си из българските земи като таксидиот носи своя исторически труд, за да бъде преписван и разпространяван сред българите. Предполага се, че е починал през 1773 г. на път за Света гора в манастир в селището Амбелино (днес „Св. Георги“ – квартал на Асеновград).[6]
+]
+---
+
+background-image: url(./media/PaisiiPicture.png)
+background-size: cover
+
+.white[
+##Влияния и значимост
+
+Първа страница от оригиналния ръкопис на Паисий на „История славянобългарска“
+
+<img src="./media/Istoriya-slavyanobulgarska.jpg" alt="Отец Паисий" width="30%">
+]
+
+---
+
+background-image: url(./media/PaisiiPicture.png)
+background-size: cover
+
+.white.large[
+„Историята“ на Паисий Хилендарски е значително повлияна от исторически съчинения като руските преводи на „Деяния церковная и гражданская“ на венецианския кардинал Цезар Бароний и „Книга историография“ („Царството на славяните“) на дубровнишкия абат Мавро Орбини, привърженик на крайния илиризъм, който Паисий критикува. За написването ѝ е ползвал още исторически извори от манастирските библиотеки в Атон и Сремски Карловци. Също Зографската грамота на цар Иван Александър, Рилската грамота на цар Иван Шишман и редица други, които днес са безвъзвратно загубени.]
+
+---
+
+background-image: url(./media/PaisiiPicture.png)
+background-size: cover
+
+.white.large[
+Познавал е и съчиненията на патриарх Евтимий Търновски („Житие на св. Иван Рилски“, „Житие на св. Петка Търновска“ и др.), а също и житията на светците Гавриил Лесновски, Иларион Мъгленски, Ангел Битолски и др. Ползвал и известните жития и легенди, свързани с дейността на св. св. Кирил и Методий и техните ученици.[5] 
+]
+
+---
+
+background-image: url(./media/PaisiiPicture.png)
+background-size: cover
+
+.white.large[
+Паисий се стреми да събуди народностното съзнание на българите, да им внуши, че имат основания за високо национално самочувствие. Високомерието на сръбските и гръцките монаси и пренебрежението им към българите и всичко българско, което водело след себе си и заплахата от пълна асимилиация и изчезване на българския род също било водещ мотив за написването. Важни аргументи са дейността на славянските първоапостоли Константин-Кирил Философ и Методий, политическото и културното процъфтяване на средновековната българска държава и видните ѝ владетели.]
+
+---
+
+background-image: url(./media/PaisiiPicture.png)
+background-size: cover
+
+.white.large[
+Създаването на „История славянобългарска“ може да се смята за начало на Българското възраждане.[7][8] Паисий е първият автор, който очертал етническата територия на българската нация, която според него обхващала земите на Мизия, Тракия, Македония и Поморавието. Известни са близо седемдесет преписа на историята.[9] Първият препис е на Софроний Врачански при посещението му в Котел (1765 г.), а първото печатно издание на книгата е направено през 1844 г. под заглавие „Царственик“ след съществено редактиране от Христаки Павлович,[6] което се смята за един от първите учебници по българска история в новооткритите светски български училища. ]
+]
+
+---
+
+background-image: url(./media/PaisiiPicture.png)
+background-size: cover
+
+.white[
+## Наследство
+]
+
+--
+
+.white.large[
+Паисий Хилендарски е сред най-почитаните дейци на Българското възраждане. Пловдивският университет, Софийската математическа гимназия и други учебни заведения в България са наречени на негово име. ]
+
+--
+
+.white.large[
+С постановление на правителството от 28 юли 2000 г. се определя годишна Държавна награда „Св. Паисий Хилендарски“, която се присъжда за стимулиране на български творци и изпълнители на произведения, свързани с българската история и традиции. 
+]
+
+---
+
+background-image: url(./media/PaisiiPicture.png)
+background-size: cover
+
+.white.large[
+#През 2008 г. в Банско е открит мемориален музей, посветен на него.
+]
+
+---
+
+background-image: url(./media/PaisiiPicture.png)
+background-size: cover
+
+.white.large[
+]
+
+---
+
+background-image: url(./media/PaisiiPicture.png)
+background-size: cover
+
+.white.large[
+]
+
+--
+
+    </textarea>
+<!--
+--
+
+.white[Височина `\(829.8\ \mathrm{m}\)`]
+--
+
+.white[
+<img src="./media/PaisiiPicture.png" alt="Отец Паисий" width="50%">
+<img src="./media/Ant.jpg" alt="Ant" width="12%"><br>Маса `\(4\times 10^{-6}\ \mathrm{kg}\)`
+
+.footnote[
+.red[*] No ants were harmed during these proceedings :-)
+]
+]
+???
+https://askabiologist.asu.edu/content/ant-factoids
+https://tasks.illustrativemathematics.org/content-standards/tasks/823
+--
+
+.white[
+<img src="./media/638831main_globe_east_2048.jpg" alt="Earth" width="12%"><br>Маса `\(5\ 972\times 10^{24}\ \mathrm{kg}\)`
+
+`\(\mathrm{g}=9.81\ {{\mathrm{m}} \over {\mathrm{s}^2}}\)`
+
+]
+--
+
+.asterixoverlay.white[
+$$V=a{\cdot}t$$
+$$S={V{\cdot}t \over 2}$$
+$$V=\sqrt{2{\cdot}a{\cdot}S}$$
+$$V=\sqrt{{2{\cdot}9.81{{\mathrm{m}} \over {\mathrm{s}^2}}{\cdot}829.8\mathrm{m}}}=\\\
+=127.6\ {\mathrm{m}\over\mathrm{s}}=\\\
+=459\ {\mathrm{km}\over\mathrm{h}}$$
+]
+
+---
+layout: false
+background-image: url(./media/BrujKhalifa.jpg)
+background-size: cover
+
+.white[Височина `\(829.8\ \mathrm{m}\)`
+
+<img src="./media/Ant.jpg" alt="Ant" width="12%"><br>Маса `\(4\times 10^{-6}\ \mathrm{kg}\)`
+
+<img src="./media/638831main_globe_east_2048.jpg" alt="Earth" width="12%"><br>Маса `\(5\ 972\times 10^{24}\ \mathrm{kg}\)`
+
+`\(\mathrm{g}=9.81\ {{\mathrm{m}} \over {\mathrm{s}^2}}\)`
+
+.footnote[
+.red[*] No ants were harmed during these proceedings :-)
+]
+]
+--
+
+.asterixoverlay.white[
+$$a={V^2\over{2{\cdot}S}}$$
+$$V=127.6\ {\mathrm{m}\over\mathrm{s}}$$
+$$S=0.5\ \mathrm{mm}=0.0005\ \mathrm{m}$$
+
+$$a={ {(127.6{\mathrm{m}\over\mathrm{s}})}^2\over{2{\cdot}0.0005\mathrm{m}}}=\\\
+=16280676\ {{\mathrm{m}} \over {\mathrm{s}^2}}$$
+$${16280676\ {{\mathrm{m}} \over {\mathrm{s}^2}}\over{9.81\ {{\mathrm{m}} \over {\mathrm{s}^2}}}}=1659600$$
+]
+
+---
+layout: false
+background-image: url(./media/BrujKhalifa.jpg)
+background-size: cover
+
+.white[Височина `\(829.8\ \mathrm{m}\)`
+
+<img src="./media/Ant.jpg" alt="Ant" width="12%"><br>Маса `\(4\times 10^{-6}\ \mathrm{kg}\)`
+
+<img src="./media/638831main_globe_east_2048.jpg" alt="Earth" width="12%"><br>Маса `\(5\ 972\times 10^{24}\ \mathrm{kg}\)`
+
+`\(\mathrm{g}=9.81\ {{\mathrm{m}} \over {\mathrm{s}^2}}\)`
+
+.footnote[
+.red[*] No ants were harmed during these proceedings :-)
+]
+]
+--
+
+.asterixoverlay.white[
+$$a=1659600{\cdot}g$$
+$$g\cdot829.8\mathrm{m}=a\cdot0.0005\mathrm{m}$$
+$$a=g\cdot{829.8\mathrm{m}\over{0.0005\mathrm{m}}}=1659600{\cdot}g$$
+
+]
+---
+class: center, middle
+
+# `\(\LaTeX{}\)` in remark
+
+---
+# Display and Inline
+# 😱 :scream: 😠 :angry: 😡 :rage: 😢 :cry: 😲 :astonished: 😵 :dizzy_face: 😰 :cold_sweat:
+1. This is an inline integral: `\(\int_a^bf(x)dx\)`
+2. More `\(x={a \over b}\)` formulae.
+3. Kinetic energy `\(E={1 \over 2}mv^2\)`
+---
+# Display formula:
+
+
+$$e^{i\pi} + 1 = 0$$
+$$E_K={1 \over 2}mv^2$$
+
+$$X_k=\frac{1}{N} x_n e^{\mathrm{i} 2\pi k \frac{n}{N}}$$
+
+$$X=\frac{1}{N} \sum_{n=0}^{N-1} x_n e^{\mathrm{i} 2\pi k \frac{n}{N}}$$
+
+$$X_k=\frac{1}{N} \sum_{n=0}^{N-1} x_n e^{\mathrm{i} 2\pi k \frac{n}{N}}$$
+
+???
+Writing math formulas seems really easy (if I knew `\(\LaTeX{}\)`).
+Now I just have to try images and videos and the presentation is "done" :-D
+---
+# Images
+
+.right[![Right-aligned image](./media/Clock_accuracy.svg)
+
+https://images-na.ssl-images-amazon.com/images/G/01/img15/pet-products/small-tiles/23695_pets_vertical_store_dogs_small_tile_8._CB312176604_.jpg
+]
+???
+Did we do images? I think we did.
+---
+background-image: url(./media/Castle_Bravo_Blast.jpg)
+
+# Slide with background image
+
+___What is this!??!?!___
+---
+class: middle, center
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Bd7Z4JIQjQM" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+
+### Video example from YouTube
+---
+# Slide 1
+
+1. Point1
+--
+
+2. Point 2
+--
+
+3. Pooint 3
+-->
+    <script src="engine/remark-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+<!--    <script src="engine/MathJax/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+-->
+    <script>
+      var hljs = remark.highlighter.engine;
+    </script>
+    <script src="engine/remark.language.js"></script>
+    <script>
+      var slideshow = remark.create({
+          highlightStyle: 'monokai',
+          highlightLanguage: 'remark',
+          ratio: '16:9',
+          highlightLines: true
+        }) ;
+
+//      MathJax.Ajax.config.path["mhchem"] = "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.2";
+      MathJax.Ajax.config.path["mhchem"] = "engine";
+
+      // Setup MathJax
+      MathJax.Hub.Config({
+          tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+          },
+          TeX: {
+            extensions: ["[mhchem]/mhchem.js"]
+          },
+          MathZoom: {
+            styles: {
+              "#MathJax_Zoom": {
+                "background-color": "rgba(0,0,0,0.7)"//"#0000F0"
+              }
+            }
+          }
+      });
+
+      MathJax.Hub.Configured();
+    </script>
+  </body>
+</html>
